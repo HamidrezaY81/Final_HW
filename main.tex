@@ -18,10 +18,21 @@
               system. Then create a file called main.md to write the 
               answers to the questions and use the command 'git add.'  
               Take it to stage mode and commit the file with the command
-               'git commit -m "add main.md" and then apply the changes to 
+               'git commit -m "add main.tex" and then apply the changes to 
                github with the command 'git push origin master'. Now the 
                project is ready for the next stage...
 
         
+        \subsection{GitHub Actions for LaTeX Compilation}
+        Following the answer to the previous question, in order to set Github
+         action, we must first create a directory named .github in the main 
+         directory of the remote repository and create a directory named workflows
+          in .github. Then we create a file called latex-build.yml in the workflows
+           and put the settings on the site https://mrturkmen.com/posts/build-release-latex/
+            into it. We just have to be careful that in the root_file, asset_path, and asset_name
+             fields, instead of the word main, we replace the name of the LaTeX file 
+             created in the previous step. Now add the changes with the git add command.
+              and finalize git commit -m "add .github" in the remote repository and apply
+               the changes in github with the command 'git push origin main'
 
 \end{document}
