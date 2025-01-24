@@ -14,8 +14,8 @@
             First, we create a repository in github in such a way 
             that we enter the desired name in its creation and tick
              the box to create a README file. Then, with the 'git clone
-              <ssh>' command, we transfer the above repository to our 
-              system. Then create a file called main.md to write the 
+              ssh' command, we transfer the above repository to our 
+              system. Then create a file called main.tex to write the 
               answers to the questions and use the command 'git add.'  
               Take it to stage mode and commit the file with the command
                'git commit -m "add main.tex" and then apply the changes to 
@@ -28,11 +28,11 @@
          action, we must first create a directory named .github in the main 
          directory of the remote repository and create a directory named workflows
           in .github. Then we create a file called latex-build.yml in the workflows
-           and put the settings on the site https://mrturkmen.com/posts/build-release-latex/
+           and put the settings on the site \url{https://mrturkmen.com/posts/build-release-latex/}
             into it. We just have to be careful that in the root_file, asset_path, and asset_name
              fields, instead of the word main, we replace the name of the LaTeX file 
              created in the previous step. Now add the changes with the git add command.
               and finalize git commit -m "add .github" in the remote repository and apply
-               the changes in github with the command 'git push origin main'
+               the changes in github with the command 'git push origin main'.
 
 \end{document}
